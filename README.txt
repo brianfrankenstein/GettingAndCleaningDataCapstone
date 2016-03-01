@@ -1,5 +1,12 @@
+==============
+Tables created
+===============
+userActivitySummary - The average of the mean and std values from each activity and subject of the combined dataset
+combinedData - A tidied dataset that combines data from the UCI HAR Dataset in a meaningful way
+
+
 ===============================
-Creating the combinedData table
+Creating the combinedDataSet table
 ===============================
 Data is extracted from files in the UCI HAR Dataset folder, if one does not exist in the current workspace it will be downloaded to the current working directory
 
@@ -23,17 +30,3 @@ Creating the userActivitySummary
 The feature values are then grouped by subject ID and activity label and features are averaged for each group and saved to the table userActivitySummary
 
 See Codebook.MD for full column descriptions 
-
-==============
-Tables created
-===============
-userActivitySummary 
-combinedData - A tidied dataset that combines data from the UCI HAR Dataset in a meaningful way (see above)
-
-xtrain 		- table with the UCI HAR Dataset/train/x_train.txt values (the feature values)
-ytrain 		- table with the UCI HAR Dataset/train/y_train.txt values (the activity label indices)             
-subjecttrain 	- table with the UCI HAR Dataset/train/subject_train.txt values (the subject ids)
-xtest           - table with the UCI HAR Dataset/test/x_test.txt values (the feature values)    
-ytest		- table with the UCI HAR Dataset/test/y_test.txt values (the activity label indices) 
-subjecttest 	- table with the UCI HAR Dataset/test/subject_test.txt values (the subject ids)
-
